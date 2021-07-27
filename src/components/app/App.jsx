@@ -1,5 +1,5 @@
 import React from 'react';
-import CharacterItem from '../characters/CharacterItem';
+import CharacterList from '../characters/CharacterList';
 export default function App() {
-  return <CharacterItem/>;
+  return <CharacterList/>;
 }
