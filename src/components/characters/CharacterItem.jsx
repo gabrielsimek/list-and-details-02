@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 
 const CharacterItem = ({ name, image }) => {
   return <li><figure>
@@ -12,9 +12,9 @@ const CharacterItem = ({ name, image }) => {
   </li>;
 };
 
-CharacterItem.PropTypes = {
-  name: PropTypes.string.isRequired,
-  img: PropTypes.string.isRequired
+CharacterItem.propTypes = {
+  name: propTypes.string.isRequired,
+  img: propTypes.string.isRequired
 };
 
 export default CharacterItem;
