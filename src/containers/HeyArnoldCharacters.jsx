@@ -3,12 +3,20 @@ import CharacterList from '../components/characters/CharacterList';
 import { fetchCharacters } from '../services/HeyArnoldApi';
 
 export default class HeyArnoldCharacters extends Component {
-  async componentDidMount() {
-    const res = await fetchCharacters();
-    console.log(res);
-  }
+state = {
+  characters: [],
+  loading: true
+}
+
+async componentDidMount() {
+  const characters = await fetchCharacters();
+  this.setState({ characters, loading: false });
+}
   
-  render() {
-    return <CharacterList/>;  
-  }
+render() {
+  const { characters, loading } = this.state;
+  if(loading) return  <h1>Loading...</h1>;
+  return <CharacterList characters={characters}/>;  
+}
+
 }
