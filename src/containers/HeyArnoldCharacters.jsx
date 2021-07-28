@@ -12,7 +12,8 @@ async componentDidMount() {
   const characters = await fetchCharacters();
   this.setState({ characters, loading: false });
 }
-  
+
+
 render() {
   const { characters, loading } = this.state;
   if(loading) return  <h1>Loading...</h1>;
