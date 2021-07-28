@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import propTypes from 'prop-types';
 import { fetchCharacterById } from '../../services/HeyArnoldApi';
+import './CharacterDetailPage.css';
 
 const CharacterDetailPage = ({ match, history }) => {
   const [character, setCharacter] = useState({});
