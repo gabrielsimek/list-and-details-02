@@ -1,19 +1,21 @@
 import React from 'react';
 import propTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import { Link, BrowserRouter as Router } from 'react-router-dom';
 import './CharacterItem.css';
 const CharacterItem = ({ name, image, _id }) => {
 
   return (
-    <Link to={`/character/${_id}`}> 
-      <figure className="CharacterItem">
-        <img 
-          src={image}/>
-        <figcaption>
-          <h1>{name}</h1>
-        </figcaption>
-      </figure>
-    </Link>
+    <Router>
+      <Link onClick ={refreshPage}to={`/character/${_id}`}> 
+        <figure className="CharacterItem">
+          <img 
+            src={image}/>
+          <figcaption>
+            <h1>{name}</h1>
+          </figcaption>
+        </figure>
+      </Link>
+    </Router>
   );
  
 };
@@ -25,3 +27,10 @@ CharacterItem.propTypes = {
 };
 
 export default CharacterItem;
+
+const refreshPage = () => {
+  setTimeout(() => {
+    window.location.reload();
+  }, 1);
+  
+};

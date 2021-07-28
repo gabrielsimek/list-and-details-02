@@ -2,15 +2,21 @@
 
 exports[`App component renders App 1`] = `
 <DocumentFragment>
-  <figure>
-    <img
-      src="https://vignette.wikia.nocookie.net/heyarnold/images/d/d9/Mitzi.png/revision/latest/scale-to-width-down/310?cb=20171212070331"
-    />
-    <figcaption>
-      <h1>
-        Mitzi
-      </h1>
-    </figcaption>
-  </figure>
+  <a
+    href="/character/undefined"
+  >
+    <figure
+      class="CharacterItem"
+    >
+      <img
+        src="https://vignette.wikia.nocookie.net/heyarnold/images/d/d9/Mitzi.png/revision/latest/scale-to-width-down/310?cb=20171212070331"
+      />
+      <figcaption>
+        <h1>
+          Mitzi
+        </h1>
+      </figcaption>
+    </figure>
+  </a>
 </DocumentFragment>
 `;
