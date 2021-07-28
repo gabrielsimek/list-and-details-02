@@ -4,3 +4,9 @@ export const fetchCharacters = async () => {
   const json = await res.json();
   return json;
 };
+
+export const fetchCharacterById = async (id) => {
+  const res = await fetch(`https://hey-arnold-api.herokuapp.com/api/v1/characters/${id}`);
+  const json = await res.json();
+  return json;
+};

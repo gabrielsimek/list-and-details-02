@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 
 import CharacterItem from './CharacterItem';
-import { image } from '@tensorflow/tfjs';
+
 
 describe('App component', () => {
  
