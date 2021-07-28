@@ -7,7 +7,7 @@ const CharacterDetailPage = ({ match, history }) => {
   useEffect(async () =>  {
     const res = await fetchCharacterById(match.params.id);
     setCharacter(res);
-  }, [1]);
+  }, []);
   
   return <figure>
     <img 

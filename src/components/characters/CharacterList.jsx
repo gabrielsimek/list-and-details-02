@@ -1,7 +1,7 @@
 import React from 'react';
 import propTypes from 'prop-types';
+import './CharacterList.css';
 import CharacterItem from './CharacterItem';
-
 const CharacterList = ({ characters }) => {
 
   const characterItems = characters.map(character => {
@@ -12,7 +12,7 @@ const CharacterList = ({ characters }) => {
     </li>;
   });
 
-  return <ul>{characterItems}</ul>;
+  return <ul className="CharacterList">{characterItems}</ul>;
 };
 
 export default CharacterList;

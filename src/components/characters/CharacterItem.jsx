@@ -1,12 +1,12 @@
 import React from 'react';
 import propTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-
+import './CharacterItem.css';
 const CharacterItem = ({ name, image, _id }) => {
 
   return (
     <Link to={`/character/${_id}`}> 
-      <figure>
+      <figure className="CharacterItem">
         <img 
           src={image}/>
         <figcaption>
